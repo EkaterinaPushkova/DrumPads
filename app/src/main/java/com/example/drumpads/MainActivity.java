@@ -52,13 +52,13 @@ public class MainActivity extends AppCompatActivity {
         p8 = findViewById(R.id.p8);
         p9 = findViewById(R.id.p9);
 
-        mp1 = MediaPlayer.create(this, R.raw.w7);
-        mp2 = MediaPlayer.create(this, R.raw.w12);
+        mp1 = MediaPlayer.create(this, R.raw.loop1);
+        mp2 = MediaPlayer.create(this, R.raw.loop2);
         mp3 = MediaPlayer.create(this, R.raw.w10);
-        mp4 = MediaPlayer.create(this, R.raw.w12);
-        mp5 = MediaPlayer.create(this, R.raw.w11);
-        mp6 = MediaPlayer.create(this, R.raw.w8);
-        mp7 = MediaPlayer.create(this, R.raw.w7);
+        mp4 = MediaPlayer.create(this, R.raw.hhc);
+        mp5 = MediaPlayer.create(this, R.raw.kk);
+        mp6 = MediaPlayer.create(this, R.raw.rb);
+        mp7 = MediaPlayer.create(this, R.raw.sn);
         mp8 = MediaPlayer.create(this, R.raw.w8);
         mp9 = MediaPlayer.create(this, R.raw.w9);
 
@@ -83,6 +83,175 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+        p2.setOnTouchListener(new View.OnTouchListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                mp2.start();
+                p2.setBackgroundColor(getColor(R.color.blueendcolor));
+                new CountDownTimer(1 * 100, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        String.valueOf(millisUntilFinished / 100);
+                    }
+
+                    @SuppressLint("NewApi")
+                    @Override
+                    public void onFinish() {
+                        p1.setBackgroundColor(getColor(R.color.bluestartcolor));
+                    }
+                }.start();
+                return false;
+            }
+        });
+        p3.setOnTouchListener(new View.OnTouchListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                mp3.start();
+                p3.setBackgroundColor(getColor(R.color.blueendcolor));
+                new CountDownTimer(1 * 100, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        String.valueOf(millisUntilFinished / 100);
+                    }
+
+                    @SuppressLint("NewApi")
+                    @Override
+                    public void onFinish() {
+                        p1.setBackgroundColor(getColor(R.color.bluestartcolor));
+                    }
+                }.start();
+                return false;
+            }
+        });
+        p4.setOnTouchListener(new View.OnTouchListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                mp4.start();
+                p4.setBackgroundColor(getColor(R.color.purpleendcolor));
+                new CountDownTimer(1 * 100, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        String.valueOf(millisUntilFinished / 100);
+                    }
+
+                    @SuppressLint("NewApi")
+                    @Override
+                    public void onFinish() {
+                        p1.setBackgroundColor(getColor(R.color.purpleestartcolor));
+                    }
+                }.start();
+                return false;
+            }
+        });
+        p5.setOnTouchListener(new View.OnTouchListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                mp5.start();
+                p5.setBackgroundColor(getColor(R.color.orangeendcolor));
+                new CountDownTimer(1 * 100, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        String.valueOf(millisUntilFinished / 100);
+                    }
+
+                    @SuppressLint("NewApi")
+                    @Override
+                    public void onFinish() {
+                        p1.setBackgroundColor(getColor(R.color.orangestartcolor));
+                    }
+                }.start();
+                return false;
+            }
+        });
+        p6.setOnTouchListener(new View.OnTouchListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                mp6.start();
+                p6.setBackgroundColor(getColor(R.color.pinkendcolor));
+                new CountDownTimer(1 * 100, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        String.valueOf(millisUntilFinished / 100);
+                    }
+
+                    @SuppressLint("NewApi")
+                    @Override
+                    public void onFinish() {
+                        p1.setBackgroundColor(getColor(R.color.pinkestartcolor));
+                    }
+                }.start();
+                return false;
+            }
+        });
+        p7.setOnTouchListener(new View.OnTouchListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                mp7.start();
+                p7.setBackgroundColor(getColor(R.color.pinkendcolor));
+                new CountDownTimer(1 * 100, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        String.valueOf(millisUntilFinished / 100);
+                    }
+
+                    @SuppressLint("NewApi")
+                    @Override
+                    public void onFinish() {
+                        p1.setBackgroundColor(getColor(R.color.pinkestartcolor));
+                    }
+                }.start();
+                return false;
+            }
+        });
+        p8.setOnTouchListener(new View.OnTouchListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                mp8.start();
+                p8.setBackgroundColor(getColor(R.color.greenndcolor));
+                new CountDownTimer(1 * 100, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        String.valueOf(millisUntilFinished / 100);
+                    }
+
+                    @SuppressLint("NewApi")
+                    @Override
+                    public void onFinish() {
+                        p1.setBackgroundColor(getColor(R.color.greenstartcolor));
+                    }
+                }.start();
+                return false;
+            }
+        });
+        p9.setOnTouchListener(new View.OnTouchListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                mp9.start();
+                p9.setBackgroundColor(getColor(R.color.pinkendcolor));
+                new CountDownTimer(1 * 100, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        String.valueOf(millisUntilFinished / 100);
+                    }
+
+                    @SuppressLint("NewApi")
+                    @Override
+                    public void onFinish() {
+                        p1.setBackgroundColor(getColor(R.color.pinkestartcolor));
+                    }
+                }.start();
+                return false;
+            }
+        });
+
 
     }
 
