@@ -1,4 +1,4 @@
 # DrumPads
-play beats!
+MAKE A BEATS!
 
-blue pads - is melody loops. click on one of them and make a beats with other keys.
+Blue pads - is melody loops. Click on one of them and make a beats with drum pads!
