@@ -54,13 +54,13 @@ public class MainActivity extends AppCompatActivity {
 
         mp1 = MediaPlayer.create(this, R.raw.loop1);
         mp2 = MediaPlayer.create(this, R.raw.loop2);
-        mp3 = MediaPlayer.create(this, R.raw.w10);
+        mp3 = MediaPlayer.create(this, R.raw.loop3);
         mp4 = MediaPlayer.create(this, R.raw.hhc);
         mp5 = MediaPlayer.create(this, R.raw.kk);
         mp6 = MediaPlayer.create(this, R.raw.rb);
         mp7 = MediaPlayer.create(this, R.raw.sn);
-        mp8 = MediaPlayer.create(this, R.raw.w8);
-        mp9 = MediaPlayer.create(this, R.raw.w9);
+        mp8 = MediaPlayer.create(this, R.raw.riz);
+        mp9 = MediaPlayer.create(this, R.raw.sw);
 
         p1.setOnTouchListener(new View.OnTouchListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
